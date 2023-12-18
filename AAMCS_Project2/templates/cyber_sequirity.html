@@ -1,0 +1,75 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+<title>cyber_sequirity</title>
+<style>
+    .im
+    {
+        height: 400px;
+        width: 700px;
+        margin-top: 100px;
+    }
+    .img2
+    {
+        height: 200px;
+        width: 500px;
+        border: solid black 2px;
+        border-radius: 20px;
+
+    }
+    .img2:hover{
+        transform:scale(1.1);
+        cursor: pointer;
+    }
+    #mm{
+        color: black;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 300px;
+    }
+    b{
+        color: black;
+    }
+</style>
+{% endblock %}
+
+{% block body_block %}
+<ins style="font-size: 30px;font-weight: 700px;color: black;position: relative;top: 40px;">ＣＹＢＥＲ ＳＥＣＵＲＩＴＹ ＣＯＮＳＵＬＴＩＮＧ
+</ins>
+<center>
+    <div><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/195556/2000_5ced744d2e2e1.jpg" alt="" srcset="" class="im"></div>
+</center>
+<div style="width: 1000px;margin-top: 30px;">
+<p>Cyber consulting, on the other hand, focuses on advising organizations on matters related to cybersecurity and information technology. Cyber consultants help businesses protect their data, systems, and networks from cyber threats and ensure compliance with relevant regulations. With the increasing frequency and sophistication of cyber-attacks, cyber consulting has become crucial for businesses aiming to safeguard their digital assets.
+</p>
+<ol>
+    <b>Common areas of focus for cyber consultants include:</b>
+    <li><b>Cybersecurity Risk Assessment: </b>   Identifying vulnerabilities and potential risks to develop strategies for risk mitigation.</li>
+    <li><b>Information Security Policies:</b> Assisting in the development and implementation of security policies and procedures.</li>
+    <li><b>Incident Response Planning: </b> Creating protocols for responding to and recovering from cyber incidents.</li>
+    <li><b>Security Awareness Training: </b>  Educating employees about cybersecurity best practices to minimize human error risks.</li>
+    <li><b>Network and System Security:  </b>  Evaluating and enhancing the security of IT infrastructure..</li>
+    <li><b>Compliance and Regulation: </b>   Ensuring adherence to industry-specific regulations and data protection laws.</li>
+    
+</ol>
+<p>In recent years, the fields of management consulting and cyber consulting have increasingly overlapped, especially as businesses recognize the critical role of cybersecurity in their overall operational resilience. Therefore, some consulting firms offer integrated services that encompass both management and cyber consulting to provide comprehensive solutions to their clients' needs.</p>
+</div>
+<div style="margin-top: 50px;margin-left: 100px;">
+    <div class="container-fluied">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-5">
+                <a href="{% url 'management_consulting' %}"><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/66882/2000_5ce50d19b2fbf.jpg" class="img2"></a>
+                <a href="{% url 'management_consulting' %}" id="mm">Management Consulting</a>
+    
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-5" style="margin-left: 40px;">
+                <a href="{% url 'cyber_sequirity' %}"><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/34073/2000_5cde438edd840.jpg" class="img2"></a>
+                <a href="{% url 'cyber_sequirity' %}" id="mm" >Statistical Consulting</a>
+                
+            </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+<title>Apply</title>
+<style>
+    form{
+        background-color: black;
+        position: relative;
+        top: -100px;
+        height:530px;
+        padding: 100px;
+    }
+    .form-outline
+    {
+        border: solid wheat 2px;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        height: 50px;
+    }
+    label
+    {
+        color: white;
+    }
+    body{
+        height: 300px;
+    }
+    i{
+        background-color: rgb(4, 4, 4);
+        color: white;
+        size: 100px;
+        position: relative;
+        top: -70px;
+        right: -500px;
+    }
+</style>
+{% endblock %}
+
+{% block body_block %}
+<form>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <a href="{% url 'home' %}"><i class="fas fa-circle-xmark"></i></a>
+    <div class="row mb-4">
+      <div class="col">
+        <div data-mdb-input-init class="form-outline">
+          <input type="text" id="form3Example1" class="form-control" />
+          <label class="form-label" for="form3Example1">First name</label>
+        </div>
+      </div>
+      <div class="col">
+        <div data-mdb-input-init class="form-outline">
+          <input type="text" id="form3Example2" class="form-control" />
+          <label class="form-label" for="form3Example2">Last name</label>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Email input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="email" id="form3Example3" class="form-control" />
+      <label class="form-label" for="form3Example3">Email</label>
+    </div>
+  
+    <!-- Password input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input type="text" id="form3Example4" class="form-control" />
+      <label class="form-label" for="form3Example4">Phone</label>
+    </div>
+  
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input type="file" id="form3Example4" class="form-control" />
+        <label class="form-label" for="form3Example4"></label>
+      </div>  
+  
+    <!-- Submit button -->
+    <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4" style="height: 60px;background-color: #13135f;">Send</button>
+  
+  </form>
+{% endblock %}

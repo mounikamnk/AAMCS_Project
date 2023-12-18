@@ -1,0 +1,74 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+<title>Management</title>
+<style>
+    .im
+    {
+        height: 400px;
+        width: 700px;
+        margin-top: 100px;
+    }
+    .img2
+    {
+        height: 200px;
+        width: 500px;
+        border: solid black 2px;
+        border-radius: 20px;
+
+    }
+    .img2:hover{
+        transform:scale(1.1);
+        cursor: pointer;
+    }
+    #mm{
+        color: black;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 300px;
+    }
+    b{
+        color: black;
+    }
+</style>
+{% endblock %}
+
+{% block body_block %}
+<ins style="font-size: 30px;font-weight: 700px;color: black;position: relative;top: 40px;">ＳＴＡＴＩＳＴＩＣＡＬ ＣＯＮＳＵＬＴＩＮＧ</ins>
+<center>
+    <div><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/34073/2000_5cde438edd840.jpg" alt="" srcset="" class="im"></div>
+</center>
+<div style="width: 1000px;margin-top: 30px;">
+<p>Statistical consulting is a specialized service offered by professionals with expertise in statistics to individuals, businesses, researchers, and organizations who require guidance and support in conducting statistical analyses or interpreting statistical data. Statistical consultants play a crucial role in helping clients make informed decisions based on data-driven insights. They are experts in applying statistical methods and techniques to various fields and industries, ranging from academia to business to government agencies.Here are some key aspects of statistical consulting:
+</p>
+<ol>
+    
+    <li><b>Data Analysis and Interpretation:</b> Statistical consultants assist clients in analyzing their data using appropriate statistical methods. They help identify the most relevant statistical tests or models based on the nature of the data and the research questions or business objectives.</li>
+    <li><b>Experimental Design:</b> For research studies or experiments, statistical consultants can aid in designing experiments to ensure the collection of valid and reliable data. Proper experimental design is crucial</li>
+    <li><b>Software and Tools: </b>  Statistical consultants are proficient in various statistical software packages, such as R, Python, SPSS, SAS, and others. They can guide clients in using the appropriate tools for data analysis and visualization.</li>
+    <li><b>Modeling and Predictive Analytics: </b>In business settings, statistical consultants can help develop predictive models to forecast future trends, customer behavior, or market demand.
+    </li>
+    <li><b>Survey Design and Analysis:  </b> Assisting in designing the organizational structure and roles to improve productivity and communication..</li>
+    <li><b>Data Visualization:</b> Organizing and maintaining files, records, and documents in both physical and digital formats.</li>
+    
+</ol>
+</div>
+<div style="margin-top: 50px;margin-left: 100px;">
+    <div class="container-fluied">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-5">
+                <a href="{% url 'management_consulting' %}"><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/66882/2000_5ce50d19b2fbf.jpg" class="img2"></a>
+                <a href="{% url 'management_consulting' %}" id="mm">Management Consulting</a>
+    
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-5" style="margin-left: 40px;">
+                <a href="{% url 'statical_consultant' %}"><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/195556/2000_5ced744d2e2e1.jpg" class="img2"></a>
+                <a href="{% url 'statical_consultant' %}" id="mm" >Cyber Security Consulting</a>
+                
+            </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

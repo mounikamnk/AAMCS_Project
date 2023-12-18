@@ -1,0 +1,383 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+ <title>home</title>
+ <style>
+    .c{
+        position: relative;
+    }
+   #c1{
+    position: absolute;
+    top: 170px;
+    left: 120px;
+    font-size: 80px;
+    font-style: initial;
+    font-weight: 800;
+    color:#fffdfd;
+   }
+   #c
+   {
+    position: absolute;
+    top: 300px;
+    left: 270px;
+    color: #f8f7f7;
+   }
+   .img{
+    height:500px;
+    width: 1263px;
+   }
+   .c2{
+    position: relative;
+   }
+   #a2{
+        height: 400px;
+        width: 300px;
+        position: absolute;
+        top: 30px;
+        left: 180px;
+   }
+   #c2
+   {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    width: 500px;
+    height: 200px;
+
+   }
+   .c3
+   {
+    margin-top: 500px;
+   
+   }
+   .img1
+   {
+    border-color: rgb(8, 7, 8);
+    border-radius: 100%;
+   }
+   h3{
+    padding: 20px;
+    color: #000000;
+   }
+   .img2
+   {
+    height: 250px;
+    margin-left: 30px;
+   }
+   #mm
+   {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(7, 7, 128);
+   }
+   .img3{
+    height:250px;
+    margin-top: 40px;
+   }
+   .xx{
+        position: relative;
+        left: -300px;
+    }
+    .yy
+    {
+        position: relative;
+        right: -270px;
+        top: -100px;
+    }
+    .zz
+    {
+        position: relative;
+        top: -200px;
+        left: -300px;
+    }
+    .d
+    {
+        position: relative;
+        top: -220px;
+    }
+    .mt
+    {
+        border:solid rgb(163, 161, 161) 1px;
+        border-radius: 20px ;
+        background-color:hsla(0, 0%, 96%, 0.97);
+        height: 250px;
+    }
+    #mt
+    {
+        width: 400px;
+        margin-left: 20px;
+        padding: 30px;
+    }
+    #mt:hover{
+        transform: translateY(-30px);
+    }
+   .for
+   {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    right: -300px;
+    top: 0px;
+   }
+   input
+   {
+    border: solid silver 2px;
+   }
+   aside
+   {
+    float: right;
+   }
+   iframe{
+    width: 100%;
+    height: 600px;
+   }
+   #vid{
+    margin-top: 10px;
+    width: 50%;
+   }
+   .count{
+    width: 1220px;
+    height: 600px;
+   }
+ </style>
+{% endblock %}
+
+{% block body_block %}
+    <div class="c" id="h1">
+        <img src="../static/images/bg1.jpg" alt="" srcset="" class="img">
+        <div id="c1">Welcome To AAMCS Tech</div>
+        <h3 id="c">Revolutionizing Technology For A Smarter Future</h3>
+    </div>
+    <div class="c2" id="h2">
+        <img src="../static/images/logo.webp" alt="" srcset="" id="a2">
+        <div id="c2">
+        <ins style="font-size: 30px;margin-right: 300px;color: black;">About</ins>
+        <p style="margin-top: 40px;color: black;">
+            AAMCS is a Management & Technology Consulting and Innovation Company with headquartered in Hyderabad, India and have been providing services in the field of Management & Cyber Security.  Additionally we also have experts in the areas of stastistical consulting, entertainment and Innovation in terms of consulting and product services</p>
+            </div>
+    </div>
+<div class="c3">
+    <h3 id="h3" style="color: #000000;">SERVICES</h3>
+<div class="container-fluied">
+  <div class="row">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-4">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgSUwOaz2p1m0r7pIcnYm-z9Tg58MDWQZlTXy_9O172ug0UGyX" class="img1">
+          <a href="{% url 'management_consulting' %}"></a><h3 style="color: #000000;">Management Consulting</h3>
+          <p>Expert advice on business strategies, operations, and organizational structures to enhance performance and growth.</p>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-4">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ62muaw3bSaTIGdpquhQJZ18ezz2xs_-GRVemF65PEEx_zAT9h" class="img1">
+          <h3 style="color: black;">Cyber Security Consulting</h3>
+          <p>A proactive service providing businesses with in-depth analysis of potential cyber threats to bolster security.</p>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-4">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyfOFr8VfrZXKhjAvBmZN8bFipxscQf0nu7hkH4lkYeGV-uqUr" class="img1">
+          <h3 style="color: #000000;">Statistical Data Consulting</h3>
+          <p>Expert guidance to analyze, interpret, and leverage complex statistical data, driving informed business decisions.</p>
+      </div>
+      <center><div class="col-6 col-md-3 col-lg-3 col-xl-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WHAOt0MVkjJrOcE--wF7lrNn5rQkObKE4Baw_O-Dqw0WI-8v" class="img1">
+          <h3 style="color: #000000;">Entertainment</h3>
+          <p>Expert guidance for entertainment projects, optimizing budgets, improving strategies, and maximizing audience engagement.</p>
+      </div></center>
+    </div>
+  </div>
+</div>
+
+
+
+<ins style="font-size: 30px; font-weight: 500; color: #000000;" id="H4">WE DO</ins>
+<div class="container-fluied">
+  <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+          <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/66882/2000_5ce50d19b2fbf.jpg" class="img2">
+          <a href="{% url 'management_consulting' %}" id="mm">Management Consulting</a>
+          <p>What we do as management consultants ?</p>
+          <a href="{% url 'management_consulting' %}" id="mm">Read More ></a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+          <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/195556/2000_5ced744d2e2e1.jpg" class="img2">
+          <a href="" id="mm">Cyber Security Consulting</a>
+          <p>What we support in a cyber perspective</p>
+          <a href="" id="mm">Read More ></a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+          <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/34073/2000_5cde438edd840.jpg" class="img2">
+          <a href="" id="mm">Statistical Consulting</a>
+          <p>We help the researchers to see their results in genuine and in way they want to make decisions</p>
+          <a href="" id="mm">Read More ></a>
+      </div>
+  </div>
+</div>
+
+
+<ins style="font-size: 30px; font-weight: 500; color: #000000;" id="#k1">OUR COUNT</ins>
+<div >
+  <img src="../static/images/count.jpg.png" alt="" srcset="" class="count">
+</div>
+
+
+
+<ins style="font-size: 30px; font-weight: 500; color: #000000;" id="H5">EXPERTISE</ins>
+<div><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/911609/800_5d94c5b7090f8.jpg" alt="" srcset="" class="img3 xx"></div>
+<div style="position: relative;top: -200px;left: 200px;width: 500px;"><h3 style="color: #000000;">Learning & Development</h3>
+<p>Enhance skills and drive career growth with our tailored, interactive learning and development programs.</p></div>
+
+
+<div><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/911609/800_5d94c5b7090f8.jpg" alt="" srcset="" class="img3 yy"></div>
+<div style="position: relative;top: -350px;left: -300px;width: 500px;"><h3 style="color: #000000;">Colleges Collaboration</h3>
+<p>A platform promoting partnerships between colleges, fostering academic research and student exchange globally.  </p></div>
+
+
+<div><img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/5246896/800_5ec949b0e05d1.jpg  " alt="" srcset="" class="img3 zz"></div>
+<div style="position: relative;top: -400px;left: 300px;width: 500px;"><h3 style="color: #000000;">Startup Mentoring </h3>
+<p>Guidance for new businesses: receive expert advice, strategies and valuable insights for your startup's success.</p></div>
+
+
+<div class="d" id="H6">
+<ins style="font-size: 30px; font-weight: 500; color: #000000;">CAREERS</ins>
+<div class="container-fluied">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-6 col-md-3 col-lg-1 col-xl-4 mt" id="mt">
+            <i class="fas fa-location-dot" >     Hyderabad, Telangana, India</i>
+            <h4 style="color: #000000;">Secretary</h4>
+            <div style="margin-top: 45px;">
+            <i class="fas fa-book-open m-4">.  137 days ago
+            </i>
+            <a class="btn btn-primary" href="{% url 'secretary' %}" style="margin-left: 60px; margin-top: 10px; padding: 10px;">APPLY NOW</a>
+            </div>
+
+        </div>
+        <div class="col-6 col-md-3 col-lg-1 col-xl-4 mt" id="mt">
+            <i class="fas fa-location-dot"> Hyderabad ,Telangana ,India</i>
+            <h4 style="color: #000000;">Corporate Educational Relations</h4>
+            <div style="margin-top: 45px;">
+            <i class="fas fa-book-open">.  123 days ago
+            </i>
+            <a href="{% url 'secretary' %}"><div class="btn btn-primary" href="{% url 'secretary' %}" style="margin-left: 10px; padding: 10px;">APPLY NOW</div></div></a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-1 col-xl-4 mt" id="mt">
+            <i class="fas fa-location-dot">      Hyderabad, Telangana, India</i>
+            <h4 style="color: #000000;margin-top: 0;">Cyber Security Trainer - Freelancer</h4>
+            <div style="margin-top: 45px;">
+            <i class="fas fa-book-open">.  143 days ago
+            </i>
+           <a href="{% url 'secretary' %}"> <div class="btn btn-primary" style="margin-left: 10px; padding: 10px;">APPLY NOW</div></a>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+  <ins style="font-size: 30px; font-weight: 500; color: #000000;position: relative;top: 0px;" id="H7">CONTACT</ins>
+  <div class="for">
+    <form>
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <input type="text" id="form3Example1" class="form-control" style="border:solid hwb(0 75% 22%) 2px;"/>
+        <label class="form-label" for="form3Example1">NAME</label>
+      </div>
+    </div>
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <input type="text" id="form3Example2" class="form-control" style="border:solid hwb(0 75% 22%) 2px;" />
+        <label class="form-label" for="form3Example2">PHONE</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input type="email" id="form3Example3" class="form-control" style="border:solid hwb(0 75% 22%) 2px;" />
+    <label class="form-label" for="form3Example3">EMAIL</label>
+  </div>
+
+  <!-- Password input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input type="" id="form3Example4" class="form-control" style="border:solid hwb(0 75% 22%) 2px; height: 100px;" />
+    <label class="form-label" for="form3Example4">MESSEGE</label>
+  </div>
+
+  <!-- Submit button -->
+  <a href="{% url 'tq' %}"><button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">CONTACT US</button></a>
+
+  
+</form>
+
+  </div>
+  <div style="position: relative;top: -120px;left: -300px;width: 500px;"><p style="color: #000000; font-size: 20px;">Hyderabad, Telangana, India</p>
+ <a href=""><i class="fas fa-square-phone"> +91-812-101-5100</i></a><br><br>
+ <a href="" style="margin-left: 20px;">aamcstechpvtltd@gmail.com</a></div>
+ 
+ <!-- map location  -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487293.4778705172!2d78.07836133263629!3d17.412733231779377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1702659071358!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ <ins style="font-size: 30px; font-weight: 500; color: #000000;" id="H8">GALLARY</ins>
+ <!--Video-->
+<div class="hero" id="vd">
+    <!-- <video controls muted plays-inline class="back-video" poster="#" height="600px" width="500px">
+      <source src="../static/media/AAMCS.mp4" type="video/mp4">
+    </video> -->
+    
+  </div>
+  <!--Video end-->
+  <iframe id="vid" src="https://www.youtube.com/embed/bW8hv2lCwZs?si=ZeuSMetVg-kD5JJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+</center>
+
+<footer>
+    <div style="position: relative; left: 100px; top: 80px; width:500px;">AAMCS Tech
+        Copyright © 2023 All rights reserved
+        Powered By SITE123 - Make your own website</div>
+<aside>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body kcp">
+    <div class="container-fluid">
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#h2">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#h3">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#H4">WE DO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR COUNT</a>
+          </li>
+          <li class="nav-item">
+
+              <select name="" id="">
+                <option value="">MORE</option>
+              <a href="#H8"><option value="">GALLARY</option></a>
+              <a href="#H7"><option value="">CONTACT</option></a>
+              <a href="#H6"><option value="">CAREERS</option></a>
+              <a href="#H5"><option value="">EXPERTICE</option></a>
+            </select></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </aside>
+  <!-- Navbar -->
+ </footer>
+{% endblock %}
